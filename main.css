@@ -1,0 +1,48 @@
+body {
+    background: lightcoral;
+}
+
+h2 {
+    font-family: 'Oleo Script', Helvetica, sans-serif;
+}
+
+.note {
+    width: 400px;
+    height: 300px;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+    text-align: left;
+}
+
+#note1 {
+    background-color: aquamarine;
+    position: relative;
+    overflow: hidden;
+}
+
+#note1:after {
+    content: "";
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: solid;
+    border-width: 0 0 30px 30px;
+    border-color: transparent transparent lightcoral rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.6), -2px 2px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.6), -2px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.6), -2px 2px 2px rgba(0, 0, 0, 0.3);
+    /* Firefox 3.0 damage limitation */
+    display: block;
+    width: 0;
+}
+
+#note2 {
+    background-color: indianred;
+    position: relative;
+    overflow: hidden;
+}
+
+#note3 {
+    background-color: beige;
+}

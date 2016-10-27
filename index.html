@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" media="screen" href="preprocess.css"/>
+    <link rel="stylesheet" media="screen" href="main.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="note" id="note1">
+    <h2>Note 1 with pseudo element</h2>
+    <p>Oiewtu aewru giweogueaewi guioewuioasg ioasiguoisdog uoiruoisdoif guuasofg hjkssghk</p>
+    <p>Asjdhgkjdsgklasj khasjgh kas hffk asdhkfasj kfhhjkashfjk asfjkhas jkfusdk fhaj khfkja</p>
+</div>
+<div class="note" id="note2">
+    <h2>Generated folded effect</h2>
+    <p>U giweogueaewi guioewuioasg ioasiguoisdog uoiruoisdoif guuasofg hjkssghk</p>
+    <p>Asjdhgkjdsgklasj khasjgh kas hffk asdhkfasj kfhhjkashfjk asfjkhas jkfusdk fhaj khfkja</p>
+</div>
+<div style="background: gold; padding:10px">
+    <div class="note" id="note3">
+        <h2>Dynamically-generated folded effect</h2>
+        <h2>Self-adapt the background color</h2>
+        <h2>Nested in div</h2>
+        <p>Oiewtu aewru giweogueaewi guioewuioasg ioasiguoisdog uoiruoisdoif guuasofg hjkssghk</p>
+        <p>Ssjdhgkjdsgklasj khasjgh kas hffk asdhkfasj kfhhjkashfjk asfjkhas jkfusdk fhaj khfkja</p>
+    </div>
+</div>
+
+
+<script src="folded.js"></script>
+<script type="text/javascript">
+    (function () {
+        fold("note2");
+        fold("note3");
+    })();
+</script>
+</body>
+</html>
